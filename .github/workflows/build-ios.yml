@@ -57,8 +57,8 @@ jobs:
         cd Applications
         mkdir Payload
         mv your_project_name.app Payload/
-        zip -r YTDownloader-iOS.ipa Payload/
-        mv YTDownloader-iOS.ipa ../../../
+        zip -r App.ipa Payload/
+        mv App.ipa ../../../
     - name: Upload IPA to GitHub Artifacts
       uses: actions/upload-artifact@v2
       with:
